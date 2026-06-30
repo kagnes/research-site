@@ -1,0 +1,19 @@
+# -- Markup -- required by Congo, and by our future Plotly embeds.
+# unsafe=true lets {{VIZ}}/{{SEARCH}} raw-HTML/JS embeds render (Phase 3/4).
+
+[goldmark]
+[goldmark.renderer]
+  unsafe = true
+[goldmark.extensions]
+[goldmark.extensions.passthrough]
+  enable = true
+[goldmark.extensions.passthrough.delimiters]
+  block = [['\[', '\]'], ['$$', '$$']]
+  inline = [['\(', '\)']]
+
+[highlight]
+  noClasses = false
+
+[tableOfContents]
+  startLevel = 2
+  endLevel = 4

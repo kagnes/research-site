@@ -1,0 +1,22 @@
+# -- Site configuration (root) --
+# Per-language and per-feature settings live in the sibling files in this
+# directory: languages.*, menus.*, params.toml, markup.toml.
+
+theme = "congo"
+
+# baseURL is a deliberate placeholder. The GitHub Pages workflow injects the
+# real URL at build time via `--baseURL`, so this is correct whatever the repo
+# ends up being named (user site vs. project subpath). See PROJECT.md.
+baseURL = "https://example.org/"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+enableRobotsTXT = true
+summaryLength = 0
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

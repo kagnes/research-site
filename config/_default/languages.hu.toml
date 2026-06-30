@@ -1,0 +1,14 @@
+locale = "hu"
+label = "Magyar"
+direction = "ltr"
+weight = 2
+
+# PLACEHOLDER text-logo / site title (HU) — replace with the final site name.
+title = "Kalivoda Ágnes — Kutatás"
+
+# PLACEHOLDER funding + copyright (HU) — replace with the final text.
+copyright = "Készült az OTKA PD **[XXXXXX]** számú pályázat támogatásával. &copy; 2026 Kalivoda Ágnes."
+
+[params]
+  dateFormat = "2006. január 2."
+  description = "Kalivoda Ágnes kutatási honlapja."

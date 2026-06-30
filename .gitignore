@@ -1,0 +1,13 @@
+# Hugo build output
+/public/
+/resources/_gen/
+.hugo_build.lock
+hugo_stats.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*~
+
+# Machine-local Claude Code permission state (keep out of the repo)
+.claude/settings.local.json

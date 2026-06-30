@@ -1,0 +1,50 @@
+# -- Főmenü (HU) -- 8 elem + nyelvváltó.
+# A magyar címkék EGYELŐRE javaslatok — kérlek hagyd jóvá vagy javítsd.
+
+[[main]]
+  name = "Kezdőlap"
+  pageRef = "/"
+  weight = 10
+
+[[main]]
+  name = "Kutatási eredmények"
+  pageRef = "research-outputs"
+  weight = 20
+
+[[main]]
+  name = "Publikációk"
+  pageRef = "publications"
+  weight = 30
+
+[[main]]
+  name = "Előadások"
+  pageRef = "presentations"
+  weight = 40
+
+[[main]]
+  name = "Adathalmazok"
+  pageRef = "datasets"
+  weight = 50
+
+[[main]]
+  name = "Korpuszok"
+  pageRef = "corpora"
+  weight = 60
+
+[[main]]
+  name = "Olvasmányok"
+  pageRef = "readings"
+  weight = 70
+
+# Külső link a kutató személyes oldalára.
+# NYITOTT KÉRDÉS (PROJECT.md §7): magyar céloldalra mutasson-e?
+[[main]]
+  name = "A kutatóról"
+  url = "https://kagnes.github.io"
+  weight = 80
+
+[[main]]
+  identifier = "locale"
+  weight = 100
+  [main.params]
+    action = "locale"

@@ -1,0 +1,15 @@
+locale = "en"
+label = "English"
+direction = "ltr"
+weight = 1
+
+# PLACEHOLDER text-logo / site title — replace with the final site name.
+title = "Ágnes Kalivoda — Research"
+
+# PLACEHOLDER funding + copyright, shown in the footer on every page (rendered
+# as Markdown). Replace [XXXXXX] and funder wording with the final text.
+copyright = "Funded by OTKA PD grant no. **[XXXXXX]**. &copy; 2026 Ágnes Kalivoda."
+
+[params]
+  dateFormat = "2 January 2006"
+  description = "Research website of Ágnes Kalivoda."

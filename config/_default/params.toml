@@ -1,0 +1,30 @@
+# -- Theme parameter overrides --
+# Only the values we deliberately change from Congo's defaults live here.
+
+colorScheme = "congo"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+enableSearch = false        # site search comes later (Phase 4 is the dataset API)
+enableCodeCopy = true
+
+[header]
+  layout = "basic"
+  showTitle = true          # text-logo placeholder = the site title
+
+[footer]
+  showCopyright = true       # funding + copyright line (see languages.*.toml)
+  showThemeAttribution = false   # flip to true if you'd like to credit Congo
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "page"
+  showRecent = false
+
+[article]
+  showDate = false
+  showAuthor = false
+  showReadingTime = false
+  showBreadcrumbs = false
+  showPagination = false
