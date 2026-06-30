@@ -1,0 +1,12 @@
+/* -- Site custom CSS (loaded last, after the Congo scheme + main bundle) -- */
+
+/* Warm off-white light-mode background instead of Congo's stark white.
+   In light mode the page and other `bg-neutral` surfaces use --color-neutral.
+   We reset it to pure white inside .dark so dark mode is unchanged. */
+:root {
+  --color-neutral: 245, 241, 230; /* #F5F1E6 */
+}
+
+.dark {
+  --color-neutral: 255, 255, 255;
+}

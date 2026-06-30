@@ -4,6 +4,7 @@
 colorScheme = "congo"
 defaultAppearance = "light"
 autoSwitchAppearance = true
+defaultThemeColor = "#F5F1E6"   # match mobile browser chrome to the warm light bg
 
 enableSearch = false        # site search comes later (Phase 4 is the dataset API)
 enableCodeCopy = true
