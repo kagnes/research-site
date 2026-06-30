@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "Project"
 description: "Short project introduction."
 ---
 

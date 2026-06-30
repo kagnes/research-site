@@ -1,5 +1,5 @@
 ---
-title: "Kezdőlap"
+title: "Projekt"
 description: "Rövid projektbemutató."
 ---
 

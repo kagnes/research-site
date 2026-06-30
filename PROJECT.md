@@ -30,20 +30,19 @@ A research website with three kinds of content:
 
 **Logo:** temporary **text placeholder** for now (real logo TBD).
 
-**Menu — 8 flat, top-level items (no dropdowns):**
+**Menu — 5 flat, top-level items (no dropdowns):**
 
-| # | Page             | Type                 | Contents                                                        |
-|---|------------------|----------------------|----------------------------------------------------------------|
-| 1 | Welcome          | static (home)        | short project description                                       |
-| 2 | Research outputs | summary hub          | overview of main results; links down to 3–6                    |
-| 3 | Publications     | list                 | two groups (closely / loosely related) + links                 |
-| 4 | Presentations    | list                 | two groups (closely / loosely related) + slide/poster links    |
-| 5 | Datasets         | list + interactive   | name, description, repo link, viz + browse links where relevant |
-| 6 | Corpora          | list + interactive   | name, description, links to browse interfaces                  |
-| 7 | Readings         | list                 | others' work used / enjoyed                                     |
-| 8 | About the PI     | external link        | link to personal site (kagnes.github.io)                       |
+| # | Page          | HU label      | Type                 | Contents                                                        |
+|---|---------------|---------------|----------------------|----------------------------------------------------------------|
+| 1 | Project       | Projekt       | static (home)        | short project description                                       |
+| 2 | Publications  | Publikációk   | list                 | two groups (closely / loosely related) + links                 |
+| 3 | Presentations | Előadások     | list                 | two groups (closely / loosely related) + slide/poster links    |
+| 4 | Datasets      | Adathalmazok  | list + interactive   | name, description, repo link, viz + browse links where relevant |
+| 5 | Readings      | Olvasmányok   | list                 | others' work used / enjoyed                                     |
 
-Items 3–6 are the "detailed outputs" that **Research outputs (2)** summarises and links to. All eight are flat siblings.
+All five are flat siblings + an EN/HU language switcher.
+
+**Trimmed 2026-06-30 (e)** — from the original 8: **Welcome → renamed "Project"**; **Research outputs** (summary hub), **Corpora**, and **About the PI** removed from the menu. Research-outputs & corpora stub pages were deleted. Corpora may return as a section in a later phase (still tracked in §6 datasets/corpora plans); the About-the-PI link will be placed elsewhere on the site, TBD.
 
 ---
 
@@ -90,7 +89,7 @@ Hugo + Congo · GitHub Pages · Python (build pipelines) · SQLite (FTS5, option
 Phases **3 & 4 repeat per dataset** and are independent — the static site and first visualizations can ship while later datasets are still in progress.
 
 - [x] **Phase 0 — Plan & structure.** Architecture, sitemap, this `PROJECT.md`. (Standard pages need no wireframes; the sitemap diagram covers structure.)
-- [~] **Phase 1 — Static skeleton + deploy.** Scaffold + nav + stubs **done and building clean locally**; the green Pages deploy is pending the first push to a GitHub repo (workflow is in place). ← *finishing*
+- [x] **Phase 1 — Static skeleton + deploy.** Scaffold + nav (8 items, EN/HU) + stubs + language switcher, **deployed green** to GitHub Pages. Live: https://kagnes.github.io/research-site/ (repo `research-site`, project subpath). ← *done*
 - [ ] **Phase 2 — Static content.** Project description, publications, presentations, readings, bio; EN + HU.
 - [ ] **Phase 3 — Visualizations** *(per dataset)*. Offline aggregation → JSON → Plotly.js page. No server.
 - [ ] **Phase 4 — Search backend** *(per dataset)*. Build pipeline → SQLite → FastAPI on VPS → search UI.
@@ -127,6 +126,7 @@ One row per browseable dataset. Status values: `planned` / `data-ready` / `viz-d
 
 ## 8. Decision log
 
+- **2026-06-30 (d)** — Phase 1 **deployed green** at https://kagnes.github.io/research-site/ (new repo `research-site`, project subpath). First CI run failed at `configure-pages` because Pages wasn't enabled; fixed by adding `enablement: true` so the workflow turns Pages on itself. Verified on the live site: subpath-correct asset URLs (no `example.org` leak), all 8 EN/HU nav items, EN↔HU language switcher, external About link, and footer funding/copyright line. URL slugs stay English in both languages (only menu *labels* are translated) — e.g. HU corpora is at `/hu/corpora/`.
 - **2026-06-30 (c)** — Phase 1 scaffold. **Congo installed as a git submodule** (`themes/congo`, `stable` branch), *not* via Hugo Modules, because Go is not installed and the submodule path needs no extra toolchain. Hugo **Extended v0.163.3** installed (the runner reinstalls it at deploy time, so no local dependency). Config split into `config/_default/` (hugo, languages.en/hu, menus.en/hu, params, markup). Header text-logo = site title; footer = placeholder funding + copyright per language. Deploy = standard **GitHub Pages Actions** workflow (`.github/workflows/hugo.yml`) with `submodules: recursive` and `--baseURL` injected from the Pages config. Site builds clean (0 warnings); EN/HU nav, language switcher, and external About link all verified in the rendered HTML. **Remaining for a green deploy:** create the (new) GitHub repo and push `main`.
 - **2026-06-30 (b)** — Finalised the sitemap: 8 flat top-level items (Welcome, Research outputs, Publications, Presentations, Datasets, Corpora, Readings, About the PI), with Research outputs as a summary hub linking to 3–6. Shell = text-logo placeholder + menu + EN/HU switch; fixed funding/copyright footer. **Theme = Congo.** Bilingual EN (primary) / HU (secondary); menu labels translated; one file per language.
 - **2026-06-30 (a)** — Settled the hybrid architecture (Hugo + Pages for static content and visualizations; FastAPI/SQLite search on a cheap EU VPS). Chose SQLite FTS5 over MySQL; chose aggregate-then-Plotly.js for visualizations. Confirmed: largest dataset ≈ 42M rows, occasional updates, open to cheap paid hosting, search mix = both with field lookups dominant.

@@ -1,46 +1,30 @@
-# -- Main menu (EN) -- 8 flat top-level items + language switcher.
+# -- Main menu (EN) -- 5 flat top-level items + language switcher.
 # pageRef links resolve to the current language's version automatically.
 
 [[main]]
-  name = "Welcome"
+  name = "Project"
   pageRef = "/"
   weight = 10
 
 [[main]]
-  name = "Research outputs"
-  pageRef = "research-outputs"
-  weight = 20
-
-[[main]]
   name = "Publications"
   pageRef = "publications"
-  weight = 30
+  weight = 20
 
 [[main]]
   name = "Presentations"
   pageRef = "presentations"
-  weight = 40
+  weight = 30
 
 [[main]]
   name = "Datasets"
   pageRef = "datasets"
-  weight = 50
-
-[[main]]
-  name = "Corpora"
-  pageRef = "corpora"
-  weight = 60
+  weight = 40
 
 [[main]]
   name = "Readings"
   pageRef = "readings"
-  weight = 70
-
-# External link to the PI's personal site.
-[[main]]
-  name = "About the PI"
-  url = "https://kagnes.github.io"
-  weight = 80
+  weight = 50
 
 # Built-in Congo language switcher (EN/HU).
 [[main]]
