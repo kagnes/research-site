@@ -5,10 +5,45 @@
    We reset it to pure white inside .dark so dark mode is unchanged. */
 :root {
   --color-neutral: 245, 241, 230; /* #F5F1E6 */
+
+  /* Recolor the theme accent from Congo's purple/fuchsia to blue.
+     Both the primary ramp (links, language switcher, text-primary-* utilities)
+     and the secondary ramp (inline `code`) are mapped to the Tailwind blue
+     ramp, so every accent on the site reads as the same blue in both modes. */
+  --color-primary-50: 239, 246, 255;
+  --color-primary-100: 219, 234, 254;
+  --color-primary-200: 191, 219, 254;
+  --color-primary-300: 147, 197, 253;
+  --color-primary-400: 96, 165, 250;
+  --color-primary-500: 59, 130, 246;
+  --color-primary-600: 37, 99, 235;
+  --color-primary-700: 29, 78, 216;
+  --color-primary-800: 30, 64, 175;
+  --color-primary-900: 30, 58, 138;
+  --color-primary-950: 23, 37, 84;
+
+  --color-secondary-50: 239, 246, 255;
+  --color-secondary-100: 219, 234, 254;
+  --color-secondary-200: 191, 219, 254;
+  --color-secondary-300: 147, 197, 253;
+  --color-secondary-400: 96, 165, 250;
+  --color-secondary-500: 59, 130, 246;
+  --color-secondary-600: 37, 99, 235;
+  --color-secondary-700: 29, 78, 216;
+  --color-secondary-800: 30, 64, 175;
+  --color-secondary-900: 30, 58, 138;
+  --color-secondary-950: 23, 37, 84;
 }
 
 .dark {
   --color-neutral: 255, 255, 255;
+}
+
+/* Let article content fill the available width (like the home page) instead of
+   being capped at Congo's ~65ch `max-w-prose`, which left the right side empty
+   on the list-style pages. */
+.prose > .grow {
+  max-width: none !important;
 }
 
 /* -- Outline "button" links (publications / presentations / datasets) --
@@ -27,9 +62,11 @@
   padding: 0.05rem 0.55rem;
   font-size: 0.8rem;
   line-height: 1.6;
-  border: 1px solid #2563eb;
-  border-radius: 0.375rem;
-  color: #2563eb !important;
+  border: 1px solid rgb(var(--color-primary-600));
+  /* !important keeps the corners rounded on hover: Congo's prose link hover
+     rule forces border-radius down to 0.09rem otherwise. */
+  border-radius: 0.375rem !important;
+  color: rgb(var(--color-primary-600)) !important;
   background: transparent !important;
   text-decoration: none !important;
   box-shadow: none !important;
@@ -37,16 +74,16 @@
 }
 
 .btn-row a:hover {
-  background: #2563eb !important;
+  background: rgb(var(--color-primary-600)) !important;
   color: #fff !important;
 }
 
 .dark .btn-row a {
-  border-color: #60a5fa;
-  color: #60a5fa !important;
+  border-color: rgb(var(--color-primary-400));
+  color: rgb(var(--color-primary-400)) !important;
 }
 
 .dark .btn-row a:hover {
-  background: #60a5fa !important;
+  background: rgb(var(--color-primary-400)) !important;
   color: #0b0f19 !important;
 }

@@ -4,7 +4,7 @@ direction = "ltr"
 weight = 2
 
 # Site title (HU) — also used as the header text-logo until a real logo is added.
-title = "Az igekötős szerkezetek kialakulása a magyar nyelvben: korpuszvezérelt megközelítés"
+title = "PrevHist"
 
 # Funding + copyright (HU), shown in the footer on every page (rendered as Markdown).
 copyright = "Az OTKA PD 142317 projektet a Nemzeti Kutatási, Fejlesztési és Innovációs Hivatal támogatta. © Kalivoda Ágnes, 2026"

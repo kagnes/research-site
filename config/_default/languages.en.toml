@@ -4,7 +4,7 @@ direction = "ltr"
 weight = 1
 
 # Site title — also used as the header text-logo until a real logo is added.
-title = "The emergence of preverb constructions in Hungarian: a corpus-driven approach"
+title = "PrevHist"
 
 # Funding + copyright, shown in the footer on every page (rendered as Markdown).
 copyright = "This project (OTKA PD 142317) has been supported by the National Research, Development and Innovation Office. © Ágnes Kalivoda, 2026"

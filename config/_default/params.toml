@@ -29,3 +29,4 @@ enableCodeCopy = true
   showReadingTime = false
   showBreadcrumbs = false
   showPagination = false
+  showHeadingAnchors = false   # no "#" anchor on heading hover
