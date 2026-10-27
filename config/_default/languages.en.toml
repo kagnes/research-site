@@ -3,12 +3,11 @@ label = "English"
 direction = "ltr"
 weight = 1
 
-# PLACEHOLDER text-logo / site title — replace with the final site name.
-title = "Ágnes Kalivoda — Research"
+# Site title — also used as the header text-logo until a real logo is added.
+title = "The emergence of preverb constructions in Hungarian: a corpus-driven approach"
 
-# PLACEHOLDER funding + copyright, shown in the footer on every page (rendered
-# as Markdown). Replace [XXXXXX] and funder wording with the final text.
-copyright = "Funded by OTKA PD grant no. **[XXXXXX]**. &copy; 2026 Ágnes Kalivoda."
+# Funding + copyright, shown in the footer on every page (rendered as Markdown).
+copyright = "This project (OTKA PD 142317) has been supported by the National Research, Development and Innovation Office. © Ágnes Kalivoda, 2026"
 
 [params]
   dateFormat = "2 January 2006"

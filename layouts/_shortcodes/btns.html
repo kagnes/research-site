@@ -1,0 +1,12 @@
+{{- /*
+  Renders a row of small outline "button" links below a list item.
+  Usage (inside a Markdown list item, on the line right after the citation):
+
+      - Citation text here.
+        {{< btns >}}[Paper](https://…) [Dataset](https://…){{< /btns >}}
+
+  The inner Markdown links are rendered through the normal link render hook
+  (so remote links automatically get target="_blank"), then wrapped in
+  .btn-row, which is styled as outline buttons in assets/css/custom.css.
+*/ -}}
+<span class="btn-row">{{ .Page.RenderString (dict "display" "inline") (trim .Inner "\n") }}</span>

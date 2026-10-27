@@ -3,11 +3,11 @@ label = "Magyar"
 direction = "ltr"
 weight = 2
 
-# PLACEHOLDER text-logo / site title (HU) — replace with the final site name.
-title = "Kalivoda Ágnes — Kutatás"
+# Site title (HU) — also used as the header text-logo until a real logo is added.
+title = "Az igekötős szerkezetek kialakulása a magyar nyelvben: korpuszvezérelt megközelítés"
 
-# PLACEHOLDER funding + copyright (HU) — replace with the final text.
-copyright = "Készült az OTKA PD **[XXXXXX]** számú pályázat támogatásával. &copy; 2026 Kalivoda Ágnes."
+# Funding + copyright (HU), shown in the footer on every page (rendered as Markdown).
+copyright = "Az OTKA PD 142317 projektet a Nemzeti Kutatási, Fejlesztési és Innovációs Hivatal támogatta. © Kalivoda Ágnes, 2026"
 
 [params]
   dateFormat = "2006. január 2."

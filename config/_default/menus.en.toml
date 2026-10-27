@@ -1,4 +1,4 @@
-# -- Main menu (EN) -- 5 flat top-level items + language switcher.
+# -- Main menu (EN) -- 4 flat top-level items + language switcher.
 # pageRef links resolve to the current language's version automatically.
 
 [[main]]
@@ -20,11 +20,6 @@
   name = "Datasets"
   pageRef = "datasets"
   weight = 40
-
-[[main]]
-  name = "Readings"
-  pageRef = "readings"
-  weight = 50
 
 # Built-in Congo language switcher (EN/HU).
 [[main]]

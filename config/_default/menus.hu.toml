@@ -1,5 +1,4 @@
-# -- Főmenü (HU) -- 5 elem + nyelvváltó.
-# A magyar címkék EGYELŐRE javaslatok — kérlek hagyd jóvá vagy javítsd.
+# -- Főmenü (HU) -- 4 elem + nyelvváltó.
 
 [[main]]
   name = "Projekt"
@@ -20,11 +19,6 @@
   name = "Adathalmazok"
   pageRef = "datasets"
   weight = 40
-
-[[main]]
-  name = "Olvasmányok"
-  pageRef = "readings"
-  weight = 50
 
 [[main]]
   identifier = "locale"

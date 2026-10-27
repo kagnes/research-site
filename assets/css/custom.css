@@ -10,3 +10,43 @@
 .dark {
   --color-neutral: 255, 255, 255;
 }
+
+/* -- Outline "button" links (publications / presentations / datasets) --
+   Produced by the {{< btns >}} shortcode, which wraps Markdown links in
+   .btn-row. Rendered as a wrapping row of small, thin blue-bordered buttons
+   that sit on their own line below the citation, with no list bullet. */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+}
+
+.btn-row a {
+  display: inline-block;
+  padding: 0.05rem 0.55rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  border: 1px solid #2563eb;
+  border-radius: 0.375rem;
+  color: #2563eb !important;
+  background: transparent !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-row a:hover {
+  background: #2563eb !important;
+  color: #fff !important;
+}
+
+.dark .btn-row a {
+  border-color: #60a5fa;
+  color: #60a5fa !important;
+}
+
+.dark .btn-row a:hover {
+  background: #60a5fa !important;
+  color: #0b0f19 !important;
+}
